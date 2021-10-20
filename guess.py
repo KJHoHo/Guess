@@ -4,8 +4,11 @@
 # 猜错的话 要告诉他 比答案大/小
 
 import random
-
-r = random.randint(1,100) # 产生随机数
+little_num = input('你希望随机范围从什么数字开始?')
+little_num = int(little_num)
+big_num = input('你希望最大的随即数是？')
+big_num = int(big_num)
+r = random.randint(little_num,big_num) # 产生随机数
 count = 0 # 初始化猜谜次数
 while True: # 无限循环游戏次数
 	count = count + 1
