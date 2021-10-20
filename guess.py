@@ -19,4 +19,5 @@ while True: # 无限循环游戏次数
 			print('猜的数字有点大哦 再试一遍吧')
 		else:
 			print('猜的数字有点小哦 再试一遍吧')
+
 print('你总共猜了' + str(count) + '次')
