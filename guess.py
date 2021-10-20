@@ -6,7 +6,9 @@
 import random
 
 r = random.randint(1,100) # 产生随机数
+count = 0 # 初始化猜谜次数
 while True: # 无限循环游戏次数
+	count = count + 1
 	guess_number = input('请输入一个数:') # 让玩家猜数
 	guess_number = int(guess_number) # 型转换方便对比
 	if guess_number == r:
@@ -17,3 +19,4 @@ while True: # 无限循环游戏次数
 			print('猜的数字有点大哦 再试一遍吧')
 		else:
 			print('猜的数字有点小哦 再试一遍吧')
+print('你总共猜了' + str(count) + '次')
